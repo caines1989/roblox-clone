@@ -1,9 +1,12 @@
-import { Hexagon, Settings, ViewHeadline } from "@mui/icons-material";
-import { Avatar, Box, Link } from "@mui/material";
+import { Settings } from "@mui/icons-material";
+import { Box, Link } from "@mui/material";
 import Logo from "../Assets/images/Roblox_Logo_Black.svg";
 import { FC } from "react";
 import { APP_HEADER_HEIGHT } from "../constants/APP_HEADER_HEIGHT";
 import { COLOR } from "../constants/COLOR";
+import { RAvatar } from "../common/components/RAvatar";
+import { RViewHeadline } from "../common/components/RViewheadline";
+import { RHexagon } from "../common/components/RHexagon";
 
 export const AppHeaderView: FC = () => {
   return (
@@ -21,23 +24,17 @@ export const AppHeaderView: FC = () => {
         </Link>
       </Box>
       <Box display="flex" position="absolute" right="50px">
-        <Avatar
-          alt="Roblox"
-          src="https://assets.reedpopcdn.com/-1639480384520.jpg/BROK/resize/1380%3E/format/jpg/quality/75/-1639480384520.jpg"
-          sx={{ width: 30, height: 30 }}
+        <RAvatar
+          src={
+            "https://assets.reedpopcdn.com/-1639480384520.jpg/BROK/resize/1380%3E/format/jpg/quality/75/-1639480384520.jpg"
+          }
+          name={"John Doe"}
+          alt={"Roblox"}
         />
-        <ViewHeadline
-          sx={{
-            width: 30,
-            height: 30,
-          }}
-        />
-        <Hexagon
-          sx={{
-            width: 30,
-            height: 30,
-          }}
-        />
+        {"@johndoe <30"}
+        <RViewHeadline />
+        <RHexagon />
+        {"125"}
         <Settings
           sx={{
             width: 30,
