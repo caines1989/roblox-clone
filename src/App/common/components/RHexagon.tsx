@@ -17,5 +17,5 @@ const RoHexagon = styled(Hexagon)({
   color: COLOR.gray[1000],
   width: HEXAGON_SIZE,
   height: HEXAGON_SIZE,
-  paddingLeft: 7,
+  paddingLeft: 20,
 });
